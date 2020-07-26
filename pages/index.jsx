@@ -5,7 +5,8 @@ export default function Home() {
     <>
       <h1>Index</h1>
 
-      <Link href="/about"><a>About</a></Link>
+      <p><Link href="/about"><a>About</a></Link></p>
+      <p><Link href="/product/kvm-vps"><a>KVM VPS</a></Link></p>
     </>
   )
 }
