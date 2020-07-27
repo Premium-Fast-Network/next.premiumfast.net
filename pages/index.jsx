@@ -10,7 +10,7 @@ export default function Home() {
   // Head Data
   const head = {
     title: 'Home',
-    description: 'Premium Fast Network menyediakan berbagai produk seperti RDP User, KVM VPS, VPN, Seedbox, Whatsapp Gateway dan masih banyak lagi. Jangan ragu untuk chat, jika punya pertanyaan tentang produk kami.',
+    description: 'Premium Fast Network menyediakan berbagai produk seperti RDP User, KVM VPS, VPN, Seedbox, Whatsapp Gateway dan masih banyak lagi. Jangan ragu untuk menghubungi kami, jika punya pertanyaan tentang produk kami.',
     keywords: 'RDP, RDP User, KVM, KVM VPS, KVM VPS Singapore, KVM VPS Canada, KVM VPS France, Whatsapp Gateway, VPN'
   }
 
@@ -35,7 +35,7 @@ export default function Home() {
           <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
             <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
               <h1 className="my-4 text-4xl font-bold leading-tight"><FontAwesomeIcon icon={faHome} /> Selamat datang.</h1>
-              <p className="leading-normal text-2xl mb-8">Premium Fast Network menyediakan berbagai produk seperti RDP User, KVM VPS, VPN, Seedbox, Whatsapp Gateway dan masih banyak lagi. Jangan ragu untuk chat, jika punya pertanyaan tentang produk kami.</p>
+              <p className="leading-normal text-2xl mb-8">Premium Fast Network menyediakan berbagai produk seperti RDP User, KVM VPS, VPN, Seedbox, Whatsapp Gateway dan masih banyak lagi. Jangan ragu untuk menghubungi kami, jika punya pertanyaan tentang produk kami.</p>
 
               <div>
                 <button nClick={onClickRegister} className="hover:bg-green-800 hover:text-white bg-white text-gray-800 font-bold rounded py-2 px-4 rounded-full mx-2 my-2">
