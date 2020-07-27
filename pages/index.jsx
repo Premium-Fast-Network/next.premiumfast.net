@@ -4,6 +4,7 @@ import HeadContent from '../components/HeadContent'
 import HeadTitle from '../components/HeadTitle'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUserEdit, faSignInAlt } from '@fortawesome/free-solid-svg-icons'
+import { Website } from '../config/Website'
 
 export default function Home() {
 
@@ -17,13 +18,13 @@ export default function Home() {
   function onClickRegister(e) {
     e.preventDefault();
 
-    window.location.href = "https://manage.premiumfast.net/register.php"
+    window.location.href = `${Website.clientarea}/register.php`
   }
 
   function onClickLogin(e) {
     e.preventDefault();
 
-    window.location.href = "https://manage.premiumfast.net/login.php"
+    window.location.href = `${Website.clientarea}/login.php`
   }
 
   return (
@@ -38,21 +39,21 @@ export default function Home() {
               <p className="leading-normal text-2xl mb-8">Premium Fast Network menyediakan berbagai produk seperti RDP User, KVM VPS, VPN, Seedbox, Whatsapp Gateway dan masih banyak lagi. Jangan ragu untuk menghubungi kami, jika punya pertanyaan tentang produk kami.</p>
 
               <div>
-                <button nClick={onClickRegister} className="hover:bg-green-800 hover:text-white bg-white text-gray-800 font-bold rounded py-2 px-4 rounded-full mx-2 my-2">
+                <button onClick={onClickRegister} className="hover:bg-green-800 hover:text-white bg-white text-gray-800 font-bold rounded py-2 px-4 rounded-full mx-2 my-2">
                   <FontAwesomeIcon icon={faUserEdit} /> Register
                 </button>
-                <button nClick={onClickRegister} className="hover:bg-green-800 hover:text-white bg-white text-gray-800 font-bold rounded py-2 px-4 rounded-full mx-2 my-2">
+                <button onClick={onClickLogin} className="hover:bg-green-800 hover:text-white bg-white text-gray-800 font-bold rounded py-2 px-4 rounded-full mx-2 my-2">
                   <FontAwesomeIcon icon={faSignInAlt} /> Login
                 </button>
               </div>
 
             </div>
             <div className="w-full md:w-3/5 py-6 text-right">
-                <img className="w-full md:w-4/5 z-50" src="/img/undraw_business_shop.svg" />
+              <img className="w-full md:w-4/5 z-50" src="/img/undraw_business_shop.svg" />
             </div>
           </div>
         </HeadContent>
-        
+
         <Whyus />
       </Layouts>
     </>
