@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Potlab Icons</title>
+  <style>
+    div {
+      margin-top: 10%;
+      margin-left: 50%;
+    }
+
+    svg {
+      text-align: center;
+      margin: auto;
+      width: 100px;
+      height: 100px;
+    }
+
+    #icon-server .ind1 {
+      -webkit-animation-name: ind1;
+      animation-name: ind1;
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+    }
+
+    #icon-server .ind2 {
+      -webkit-animation-name: ind2;
+      animation-name: ind2;
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+    }
+
+    @-webkit-keyframes ind1 {
+
+      from,
+      50%,
+      to {
+        opacity: 1;
+      }
+
+      25%,
+      75% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes ind1 {
+
+      from,
+      50%,
+      to {
+        opacity: 1;
+      }
+
+      25%,
+      75% {
+        opacity: 0;
+      }
+    }
+
+    @-webkit-keyframes ind2 {
+
+      25%,
+      75% {
+        opacity: 1;
+      }
+
+      from,
+      50%,
+      to {
+        opacity: 0;
+      }
+    }
+
+    @keyframes ind2 {
+
+      25%,
+      75% {
+        opacity: 1;
+      }
+
+      from,
+      50%,
+      to {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <svg id="icon-server" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="#2a2a31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+      <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+      <line class="ind1" stroke="#ea3970" x1="6" y1="6" x2="6" y2="6"></line>
+      <line class="ind2" stroke="#ea3970" x1="6" y1="18" x2="6" y2="18"></line>
+    </svg>
+  </div>
+</body>
+
+</html>

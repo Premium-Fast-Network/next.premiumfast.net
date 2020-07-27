@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #08b427 0%, #388E3C 100%);
+}
+
+.theme-menu-color {
+    background: #08b427;
+}
+
+.theme-font-color {
+    color: #08b427;
+}

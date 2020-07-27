@@ -1,11 +1,23 @@
-import Link from 'next/link'
+import Head from 'next/head'
+import Layouts from '../components/Layouts'
+import Whyus from '../components/Whyus'
+import HeadContent from '../components/HeadContent'
+import HeadTitle from '../components/HeadTitle'
 
-export default function About() {
+export default function Home() {
+
+  const head = {
+    title: 'About'
+  }
+
   return (
     <>
-      <h1>About</h1>
+      <HeadTitle customHead={head} />
 
-      <Link href="/"><a>Index</a></Link>
+      <Layouts>
+        <HeadContent />
+        <Whyus />
+      </Layouts>
     </>
   )
 }
