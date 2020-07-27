@@ -1,12 +1,15 @@
+import Head from 'next/head'
 import Link from 'next/link'
+import Layouts from '../components/Layouts'
 
 export default function Home() {
   return (
     <>
-      <h1 className="text-green-800">Index</h1>
+      <Head>
+        <title>Home</title>
+      </Head>
 
-      <p><Link href="/about"><a>About</a></Link></p>
-      <p><Link href="/product/kvm-vps"><a>KVM VPS</a></Link></p>
+      <Layouts />
     </>
   )
 }
