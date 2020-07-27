@@ -45,48 +45,48 @@ export default function Whyus() {
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-                        <div class="w-full sm:w-1/2 p-6 mt-6">
-                            <img class="w-full sm:h-40 mx-auto" src="/img/undraw_outer_space.svg" alt="Instant Activation" />
+                    <div className="flex flex-wrap flex-col-reverse sm:flex-row">
+                        <div className="w-full sm:w-1/2 p-6 mt-6">
+                            <img className="w-full sm:h-40 mx-auto" src="/img/undraw_outer_space.svg" alt="Instant Activation" />
                         </div>
-                        <div class="w-full sm:w-1/2 p-6 mt-6">
-                            <div class="align-middle">
-                                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                        <div className="w-full sm:w-1/2 p-6 mt-6">
+                            <div className="align-middle">
+                                <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                                     Instant Activation
                                 </h3>
-                                <p class="text-gray-600 mb-8">Beberapa produk kami seperti RDP User/KVM VPS/VPN/Leechbox, Akan
+                                <p className="text-gray-600 mb-8">Beberapa produk kami seperti RDP User/KVM VPS/VPN/Leechbox, Akan
                                     aktif secara automatis setelah anda melakukan atau melunasi pembayaran sesuai invoice
                                     tagihan.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap">
-                        <div class="w-5/6 sm:w-1/2 p-6">
-                            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                    <div className="flex flex-wrap">
+                        <div className="w-5/6 sm:w-1/2 p-6">
+                            <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                                 Email/Whatsapp Notification
                             </h3>
-                            <p class="text-gray-600 mb-8">
+                            <p className="text-gray-600 mb-8">
                                 Kami akan mengirimkan notifikasi via email dan whatsapp kepada anda seperti tentang pembelian
                                 baru, perpanjangan produk, support tiket atau pengumuman tentang produk yang anda gunakan.
                             </p>
                         </div>
-                        <div class="w-full sm:w-1/2 p-6">
-                            <img class="w-full sm:h-40 mx-auto" src="/img/undraw_notify_re.svg"
+                        <div className="w-full sm:w-1/2 p-6">
+                            <img className="w-full sm:h-40 mx-auto" src="/img/undraw_notify_re.svg"
                                 alt="Email/Whatsapp Notification" />
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-                        <div class="w-full sm:w-1/2 p-6 mt-6">
-                            <img class="w-full sm:h-40 mx-auto" src="/img/undraw_note_list_re.svg" alt="Client Area" />
+                    <div className="flex flex-wrap flex-col-reverse sm:flex-row">
+                        <div className="w-full sm:w-1/2 p-6 mt-6">
+                            <img className="w-full sm:h-40 mx-auto" src="/img/undraw_note_list_re.svg" alt="Client Area" />
                         </div>
-                        <div class="w-full sm:w-1/2 p-6 mt-6">
-                            <div class="align-middle">
-                                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                        <div className="w-full sm:w-1/2 p-6 mt-6">
+                            <div className="align-middle">
+                                <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                                     Client Area
                                 </h3>
-                                <p class="text-gray-600 mb-8">
+                                <p className="text-gray-600 mb-8">
                                     Kami menyediakan Client Area untuk mempermudah anda mengecek tentang status order produk
                                     anda, tagihan, support tiket dan pengumuman terbaru dari kami.
                                 </p>
@@ -94,31 +94,31 @@ export default function Whyus() {
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap">
-                        <div class="w-5/6 sm:w-1/2 p-6">
-                            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                    <div className="flex flex-wrap">
+                        <div className="w-5/6 sm:w-1/2 p-6">
+                            <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                                 Support
                             </h3>
-                            <p class="text-gray-600 mb-8">
+                            <p className="text-gray-600 mb-8">
                                 Jika anda mempunyai masalah pada produk yang anda gunakan, jangan ragu untuk menghubungi support kami melalui support tiket yang bisa anda buka 24 jam. Staff kami akan segera merespon tiket anda ketika online.
                             </p>
                         </div>
-                        <div class="w-full sm:w-1/2 p-6">
-                            <img class="w-full sm:h-40 mx-auto" src="/img/undraw_questions.svg"
+                        <div className="w-full sm:w-1/2 p-6">
+                            <img className="w-full sm:h-40 mx-auto" src="/img/undraw_questions.svg"
                                 alt="Support" />
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-                        <div class="w-full sm:w-1/2 p-6 mt-6">
-                            <img class="w-full sm:h-40 mx-auto" src="/img/undraw_connected_world.svg" alt="Multiple Server" />
+                    <div className="flex flex-wrap flex-col-reverse sm:flex-row">
+                        <div className="w-full sm:w-1/2 p-6 mt-6">
+                            <img className="w-full sm:h-40 mx-auto" src="/img/undraw_connected_world.svg" alt="Multiple Server" />
                         </div>
-                        <div class="w-full sm:w-1/2 p-6 mt-6">
-                            <div class="align-middle">
-                                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                        <div className="w-full sm:w-1/2 p-6 mt-6">
+                            <div className="align-middle">
+                                <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                                     Multiple Server
                                 </h3>
-                                <p class="text-gray-600 mb-8">
+                                <p className="text-gray-600 mb-8">
                                     Kami menawarkan berbagai lokasi server dari berbagai negara untuk menyesuaikan kebutuhan anda dari berbagai paket yang kami tawarkan.
                                 </p>
                             </div>
