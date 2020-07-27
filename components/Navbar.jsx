@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
 import { withRouter } from 'next/router'
+import { menuTop } from '../config/Menu'
 
 function Navbar({ router }) {
 
@@ -54,31 +55,6 @@ function Navbar({ router }) {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, [ goingUp ]);
-
-    // Array of Navigation Menu
-    const navs = [
-        { name: 'Home', href: '/'},
-        { name: 'Jasa', href: '/', child: [
-            { name: 'Whatsapp Gateway', href: '/whatsapp-gateway' },
-            { name: 'Reseller Whatsapp Gateway', href: '/reseller-whatsapp-gateway' },
-        ]},
-        { name: 'Server', href: '/', child: [
-            { name: 'RDP User', href: '/rdp-user' },
-            { name: 'RDP Emulator', href: '/rdp-user' },
-            { name: 'RDP Dedicated', href: '/rdp-dedicated' },
-            { name: 'KVM VPS Canada', href: '/kvm-vps-canada' },
-            { name: 'KVM VPS France', href: '/kvm-vps-france' },
-            { name: 'KVM VPS Singapore', href: '/kvm-vps-singapore' },
-            { name: 'VPN', href: '/vpn' },
-        ]},
-        { name: 'Seedbox', href: '/', child: [
-            { name: 'Leechbox', href: '/product/leechbox' },
-            { name: 'Seedbox', href: '/product/seedbox' },
-            { name: 'Seedbox Dedicated', href: '/product/seedbox-dedicated' },
-            { name: 'Google Drive Mirror', href: '/product/google-drive-mirror' },
-        ]},
-    ];
-
 
     function mobileMenu(e) {
         const target = (e && e.target) || (event && event.srcElement);
@@ -138,7 +114,7 @@ function Navbar({ router }) {
                     id="nav-content">
                     <ul className="list-reset lg:flex justify-end flex-1 items-center">
                         {
-                            navs.map((nav) => {
+                            menuTop.map((nav) => {
 
                                 if(nav.child) {
                                     return (
