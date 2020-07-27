@@ -13,7 +13,6 @@ function Navbar({ router }) {
         <nav id="header" className="fixed w-full z-30 top-0 text-white">
 
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-
                 <div className="pl-4 flex items-center">
                     <a className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
                         href="#">
@@ -37,7 +36,7 @@ function Navbar({ router }) {
                     </button>
                 </div>
 
-                <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+                <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-white p-4 lg:p-0 z-20"
                     id="nav-content">
                     <ul className="list-reset lg:flex justify-end flex-1 items-center">
                         {
@@ -51,9 +50,14 @@ function Navbar({ router }) {
                         }
                     </ul>
 
-                    <a href="#" id="navAction"
-                        className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded mt-4 lg:mt-0 py-2 px-4 shadow opacity-75">Client
-                        Area</a>
+                    <a
+                        id="navAction"
+                        href="https://manage.premiumfast.net/clientarea.php"
+                        className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded mt-4 lg:mt-0 py-2 px-4 shadow opacity-75"
+                    >
+                        Client Area
+                    </a>
+                    
                 </div>
             </div>
 
