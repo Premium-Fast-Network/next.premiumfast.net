@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
 import { withRouter } from 'next/router'
 import { menuTop } from '../config/Menu'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouseUser } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar({ router }) {
 
@@ -22,7 +24,7 @@ function Navbar({ router }) {
                 header.classList.add("shadow");
         
                 navaction.classList.remove("bg-white");
-                navaction.classList.add("gradient");
+                navaction.classList.add("bg-green-500");
                 navaction.classList.remove("text-gray-800");
                 navaction.classList.add("text-white");
         
@@ -36,7 +38,8 @@ function Navbar({ router }) {
                 navcontent.classList.add("bg-white");
             } else {
                 header.classList.remove("bg-white");
-                navaction.classList.remove("gradient");
+
+                navaction.classList.remove("bg-green-500");
                 navaction.classList.add("bg-white");
                 navaction.classList.remove("text-white");
                 navaction.classList.add("text-gray-800");
@@ -156,9 +159,9 @@ function Navbar({ router }) {
                     <a
                         id="navAction"
                         href="https://manage.premiumfast.net/clientarea.php"
-                        className="mx-auto lg:mx-0 hover:bg-green-700 bg-white text-gray-800 font-bold rounded mt-4 lg:mt-0 py-2 px-4 shadow"
+                        className="mx-auto lg:mx-0 hover:bg-green-800 hover:text-white bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-4 shadow"
                     >
-                        Client Area
+                        <FontAwesomeIcon icon={faHouseUser} /> Client Area
                     </a>
                     
                 </div>
