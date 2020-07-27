@@ -3,25 +3,28 @@ export default function Whyus() {
         <>
             <section className="bg-white border-b py-8">
                 <div className="container max-w-5xl mx-auto m-8">
-                    <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+                    <h1 className="w-full my-2 text-2xl lg:text-4xl font-bold leading-tight text-center text-gray-800">
                         Kenapa Harus PremiumFast<span className="text-red-700">.NET</span> ?
                     </h1>
-                    <div className="w-full mb-4">
-                        <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-                    </div>
 
                     <div className="flex flex-wrap flex-col-reverse sm:flex-row">
-                        <div className="w-full sm:w-1/2 p-6 mt-6">
-                            <img className="w-full sm:h-40 mx-auto" src="/img/undraw_appreciation.svg"
-                                alt="Terpercaya" />
+                        <div className="w-full mb-4">
+                            <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                         </div>
-                        <div className="w-full sm:w-1/2 p-6 mt-6">
-                            <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                                Terpercaya
-                            </h3>
-                            <p className="text-gray-600 mb-8">
-                                Kami telah hadir sejak 2013 dan hingga sekarang tetap menjadi mitra para pelanggan kami dan akan tetap konsisten untuk memberikan pelayanan terbaik.
-                            </p>
+
+                        <div className="flex flex-wrap flex-col-reverse sm:flex-row">
+                            <div className="w-full sm:w-1/2 p-6 mt-6">
+                                <img className="w-full sm:h-40 mx-auto" src="/img/undraw_appreciation.svg"
+                                    alt="Terpercaya" />
+                            </div>
+                            <div className="w-full sm:w-1/2 p-6 mt-6">
+                                <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+                                    Terpercaya
+                                </h3>
+                                <p className="text-gray-600 mb-8">
+                                    Kami telah hadir sejak 2013 dan hingga sekarang tetap menjadi mitra para pelanggan kami dan akan tetap konsisten untuk memberikan pelayanan terbaik.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
