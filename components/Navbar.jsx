@@ -61,6 +61,13 @@ function Navbar({ router }) {
         const navMenuDiv = document.getElementById("nav-content");
         const navMenu = document.getElementById("nav-toggle");
 
+        //Use to switch toggleColour colours
+        const toToggle = document.querySelectorAll(".toggleColour");
+        for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-gray-800");
+            toToggle[i].classList.remove("text-white");
+        }
+
         //Nav Menu
         if (!checkParent(target, navMenuDiv)) {
             // click NOT on the menu
@@ -98,7 +105,7 @@ function Navbar({ router }) {
                             <line className="ind1" stroke="#ea3970" x1="6" y1="6" x2="6" y2="6"></line>
                             <line className="ind2" stroke="#ea3970" x1="6" y1="18" x2="6" y2="18"></line>
                         </svg>
-                        <span className="text-3xl">
+                        <span className="text-2xl">
                             PremiumFast<span className="text-red-700">.NET</span>
                         </span>
                     </a>
