@@ -67,7 +67,38 @@ export default function Whyus() {
                     <div className="flex flex-wrap">
                         <div className="w-5/6 sm:w-1/2 p-6">
                             <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                                Email/Whatsapp Notification
+                                Renew Product
+                            </h3>
+                            <p className="text-gray-600 mb-8">
+                                Semua produk kami bisa diperpanjang tiap bulannya, pastikan anda melakukan transfer sebelum jatuh tempo tagihan. Anda juga bisa menggunakan fitur deposit, saldo deposit anda akan terpotong secara automatis setiap invoice terbit.
+                            </p>
+                        </div>
+                        <div className="w-full sm:w-1/2 p-6">
+                            <img className="w-full sm:h-40 mx-auto" src="/img/undraw_booking.svg"
+                                alt="Renew Product" />
+                        </div>
+                    </div>
+
+                    <div className="flex flex-wrap flex-col-reverse sm:flex-row">
+                        <div className="w-full sm:w-1/2 p-6 mt-6">
+                            <img className="w-full sm:h-40 mx-auto" src="/img/undraw_tutorial_video.svg" alt="Text/Video Tutorial" />
+                        </div>
+                        <div className="w-full sm:w-1/2 p-6 mt-6">
+                            <div className="align-middle">
+                                <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+                                    Text/Video Tutorial
+                                </h3>
+                                <p className="text-gray-600 mb-8">
+                                    Kami menyediakan tutorial dasar berbasis text atau video untuk mempermudah para pelanggan kami dalam menggunakan setiap produk yang kami sediakan secara GRATIS.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-wrap">
+                        <div className="w-5/6 sm:w-1/2 p-6">
+                            <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+                                Email/ Whatsapp Notification
                             </h3>
                             <p className="text-gray-600 mb-8">
                                 Kami akan mengirimkan notifikasi via email dan whatsapp kepada anda seperti tentang pembelian
