@@ -98,7 +98,7 @@ function Navbar({ router }) {
                             <line className="ind1" stroke="#ea3970" x1="6" y1="6" x2="6" y2="6"></line>
                             <line className="ind2" stroke="#ea3970" x1="6" y1="18" x2="6" y2="18"></line>
                         </svg>
-                        <span className="text-2xl">
+                        <span className="text-3xl">
                             PremiumFast<span className="text-red-700">.NET</span>
                         </span>
                     </a>
