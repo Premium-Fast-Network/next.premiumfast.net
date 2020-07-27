@@ -95,20 +95,18 @@ function Navbar({ router }) {
         <nav id="header" className="fixed w-full z-30 top-0 text-white shadow-xl">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
                 <div className="pl-4 flex items-center">
-                    <a className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-                        href="#">
-                        <svg className="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" width="45" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="#2a2a31" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <rect x="2" y="2" width="25" height="8" rx="2" ry="2"></rect>
-                            <rect x="2" y="14" width="25" height="8" rx="2" ry="2"></rect>
-                            <line className="ind1" stroke="#ea3970" x1="6" y1="6" x2="6" y2="6"></line>
-                            <line className="ind2" stroke="#ea3970" x1="6" y1="18" x2="6" y2="18"></line>
-                        </svg>
-                        <span className="text-2xl">
-                            PremiumFast<span className="text-red-700">.NET</span>
-                        </span>
-                    </a>
+                    <Link href="/">
+                        <a className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
+                            <svg className="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" width="45" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="#2a2a31" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="2" width="25" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="25" height="8" rx="2" ry="2"></rect>
+                                <line className="ind1" stroke="#ea3970" x1="6" y1="6" x2="6" y2="6"></line>
+                                <line className="ind2" stroke="#ea3970" x1="6" y1="18" x2="6" y2="18"></line>
+                            </svg>PremiumFast<span className="text-red-700">.NET</span>
+                        </a>
+                    </Link>
                 </div>
 
                 <div className="block lg:hidden pr-4">
