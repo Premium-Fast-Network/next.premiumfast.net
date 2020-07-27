@@ -1,7 +1,7 @@
 export default function HeadContent(props) {
     return (
         <>
-            <div className="pt-24">
+            <div className="pt-16">
                 {props.children}
             </div>
 
