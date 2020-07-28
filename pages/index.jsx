@@ -13,7 +13,8 @@ export default function Home() {
     title: 'Home',
     description: 'Premium Fast Network menyediakan berbagai produk seperti RDP User, KVM VPS, VPN, Seedbox, Whatsapp Gateway dan masih banyak lagi. Jangan ragu untuk menghubungi kami, jika punya pertanyaan tentang produk kami.',
     keywords: 'RDP, RDP User, KVM, KVM VPS, KVM VPS Singapore, KVM VPS Canada, KVM VPS France, Whatsapp Gateway, VPN',
-    image: '/img/undraw_business_shop.svg'
+    image: '/img/png/undraw_business_shop.png',
+    imageSvg: '/img/undraw_business_shop.svg'
   }
 
   function onClickRegister(e) {
@@ -50,7 +51,7 @@ export default function Home() {
 
             </div>
             <div className="w-full md:w-3/5 py-6 text-right">
-              <img className="w-full md:w-4/5 z-50" src="/img/undraw_business_shop.svg" />
+              <img className="w-full md:w-4/5 z-50" src={head.imageSvg} />
             </div>
           </div>
         </HeadContent>

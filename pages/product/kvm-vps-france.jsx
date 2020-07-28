@@ -14,7 +14,8 @@ export default function KvmVPSFrance() {
         title: 'KVM VPS France',
         description: 'KVM VPS France adalah salah satu produk KVM VPS menggunakan Disk SSD yang sangat cepat untuk memproses data pada server di bandingkan dengan HDD biasa pada umumnya.',
         keywords: 'KVM VPS France, KVM VPS France SSD, KVM VPS Windows, VPS Windows, KVM VPS, France SSD, VPS France Windows',
-        image: '/img/undraw_server.svg'
+        image: '/img/png/undraw_server.png',
+        imageSvg: '/img/undraw_server.svg'
     }
 
     // Products Data
