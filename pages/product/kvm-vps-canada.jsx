@@ -14,8 +14,8 @@ export default function KvmVPSCanada() {
         title: 'KVM VPS Canada',
         description: 'KVM VPS Canada adalah salah satu produk KVM VPS menggunakan Disk SSD yang sangat cepat untuk memproses data pada server di bandingkan dengan HDD biasa pada umumnya.',
         keywords: 'KVM VPS Canada, KVM VPS Canada SSD, KVM VPS Windows, VPS Windows, KVM VPS, Canada SSD, VPS Canada Windows',
-        image: '/img/png/undraw_server.png',
-        imageSvg: '/img/undraw_server.svg'
+        image: '/img/png/undraw_connected_world.png',
+        imageSvg: '/img/undraw_connected_world.svg'
     }
 
     // Products Data
