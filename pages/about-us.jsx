@@ -1,10 +1,8 @@
 import Layouts from '../components/Layouts'
-import Whyus from '../components/Whyus'
 import HeadContent from '../components/HeadContent'
 import HeadTitle from '../components/HeadTitle'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons'
-import { Website } from '../config/Website'
 
 export default function Home() {
 
