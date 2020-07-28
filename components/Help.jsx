@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faTicketAlt } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { Website } from '../config/Website'
-import Particle from './Particle'
 
 export default function Help() {
     function tiketSupport(e) {

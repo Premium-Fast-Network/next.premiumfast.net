@@ -1,5 +1,3 @@
-import Particle from './Particle'
-
 export default function HeadContent(props) {
     return (
         <>
