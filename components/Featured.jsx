@@ -28,7 +28,7 @@ export default function Featured(props) {
                                     <div className="text-5xl theme-font-color">
                                         <FontAwesomeIcon icon={list.icon} />
                                     </div>
-                                    <p className="text-xl theme-font-color">{list.name}</p>
+                                    <p className="text-xl font-bold theme-font-color">{list.name}</p>
                                     <p>{list.description}</p>
                                 </div>
                             </div>

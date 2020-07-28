@@ -87,7 +87,7 @@ export default function OperatingSystem() {
                                     <div className="text-5xl">
                                         <FontAwesomeIcon icon={os.icon} />
                                     </div>
-                                    <p className="text-2xl underline theme-font-color">{os.name}</p>
+                                    <p className="text-2xl font-bold underline theme-font-color">{os.name}</p>
                                     <ul>
                                         {
                                             os.lists.map((list, index) => (
