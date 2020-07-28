@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faTicketAlt } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { Website } from '../config/Website'
+import Particle from './Particle'
 
 export default function Help() {
     function tiketSupport(e) {
@@ -26,6 +27,8 @@ export default function Help() {
 
     return (
         <>
+            <Particle />
+
             <img src="/img/bottom.svg" alt="" />
 
             <section className="container mx-auto text-center py-6 mb-12">
