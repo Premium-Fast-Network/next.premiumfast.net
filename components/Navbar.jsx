@@ -100,7 +100,7 @@ function Navbar({ router }) {
                 <div className="pl-4 flex items-center">
                     <Link href="/">
                         <a className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
-                            <svg className="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" width="45" height="24"
+                            <svg id="icon-server" className="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" width="45" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="#2a2a31" strokeWidth="2" strokeLinecap="round"
                                 strokeLinejoin="round">
                                 <rect x="2" y="2" width="25" height="8" rx="2" ry="2"></rect>
