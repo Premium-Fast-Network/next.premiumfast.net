@@ -126,7 +126,7 @@ function Navbar({ router }) {
 
                                 if(nav.child) {
                                     return (
-                                        <li key={`navparent-${index}`} id={`navparent-${index}`} className="group inline-block relative mr-3">
+                                        <li key={`navparent-${index}`} id={`navparent-${index}`} className="group inline-block relative mr-2">
                                             <Link href={nav.href}>
                                                 <a className={`toggleColour inline-block py-2 px-4 no-underline ${ router.pathname == nav.href ? 'font-bold' : 'hover:text-gray-800 hover:text-underline' }`}>{nav.name}</a>
                                             </Link>
@@ -155,7 +155,7 @@ function Navbar({ router }) {
                                     )
                                 } else {
                                     return (
-                                        <li key={`navparent-${index}`} id={`navparent-${index}`} className="inline-block relative mr-3">
+                                        <li key={`navparent-${index}`} id={`navparent-${index}`} className="inline-block relative mr-2">
                                             <Link href={nav.href}>
                                                 <a className={`toggleColour inline-block py-2 px-4 no-underline ${ router.pathname == nav.href ? 'font-bold' : 'hover:text-gray-800 hover:text-underline' }`}>{nav.name}</a>
                                             </Link>
