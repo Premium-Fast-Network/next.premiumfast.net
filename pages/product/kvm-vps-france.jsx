@@ -21,7 +21,7 @@ export default function KvmVPSFrance() {
 
     // Products Data
     const products = [
-        { 
+        {
             name: 'FR-SSD-2',
             price: 'Rp. 100k',
             duration: '/bulan',
@@ -36,7 +36,7 @@ export default function KvmVPSFrance() {
                 'Full Administrator/root',
             ]
         },
-        { 
+        {
             name: 'FR-SSD-4',
             price: 'Rp. 200k',
             duration: '/bulan',
@@ -51,7 +51,7 @@ export default function KvmVPSFrance() {
                 'Full Administrator/root',
             ]
         },
-        { 
+        {
             name: 'FR-SSD-8',
             price: 'Rp. 400k',
             duration: '/bulan',
@@ -66,7 +66,7 @@ export default function KvmVPSFrance() {
                 'Full Administrator/root',
             ]
         },
-        { 
+        {
             name: 'FR-SSD-16',
             price: 'Rp. 800k',
             duration: '/bulan',
@@ -88,16 +88,11 @@ export default function KvmVPSFrance() {
             <HeadTitle customHead={head} />
 
             <Layouts>
-                <HeadContent>
-                    <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-                        <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-                            <h1 className="my-4 text-4xl font-bold leading-tight"><FontAwesomeIcon icon={faServer} />  {head.title}</h1>
-                            <p className="leading-normal text-2xl mb-8">{head.description}</p>
-                        </div>
-                        <div className="w-full md:w-3/5 py-6 text-right">
-                            <img className="w-full md:w-4/5 z-50" src={head.imageSvg} />
-                        </div>
-                    </div>
+                <HeadContent
+                    title={((<><FontAwesomeIcon icon={faServer} /> {head.title}</>))}
+                    description={head.description}
+                    imageSvg={head.imageSvg}
+                >
                 </HeadContent>
 
                 <TableDefault products={products} />
