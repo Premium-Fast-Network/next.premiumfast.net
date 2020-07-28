@@ -1,5 +1,6 @@
 export const Website = {
     name: 'Premium Fast Network',
+    domain: process.env.NEXT_PUBLIC_APP_DOMAIN ?? 'https://next.premiumfast.net',
     clientarea: 'https://manage.premiumfast.net',
     email: 'cs@premiumfast.net',
     phone: '+62857 999-02074',
