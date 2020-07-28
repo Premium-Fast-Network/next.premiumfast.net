@@ -5,7 +5,8 @@ import TableDefault from '../../components/TableDefault'
 import FeaturedKVMVPS from '../../components/FeaturedKVMVPS'
 import OperatingSystem from '../../components/OperatingSystem'
 import { Website } from '../../config/Website'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faServer } from '@fortawesome/free-solid-svg-icons'
 
 export default function KvmVPSCanada() {
 
@@ -90,7 +91,7 @@ export default function KvmVPSCanada() {
                 <HeadContent>
                     <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
                         <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-                            <h1 className="my-4 text-4xl font-bold leading-tight">{head.title}</h1>
+                            <h1 className="my-4 text-4xl font-bold leading-tight"><FontAwesomeIcon icon={faServer} /> {head.title}</h1>
                             <p className="leading-normal text-2xl mb-8">{head.description}</p>
                         </div>
                         <div className="w-full md:w-3/5 py-6 text-right">
