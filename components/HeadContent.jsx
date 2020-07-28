@@ -4,8 +4,6 @@ export default function HeadContent(props) {
     return (
         <>
             <div className="pt-16">
-                <Particle />
-                
                 {props.children}
             </div>
 

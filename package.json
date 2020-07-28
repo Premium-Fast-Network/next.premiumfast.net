@@ -10,8 +10,7 @@
   "dependencies": {
     "next": "9.4.4",
     "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-particles-js": "^3.3.0"
+    "react-dom": "16.13.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",

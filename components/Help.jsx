@@ -27,8 +27,6 @@ export default function Help() {
 
     return (
         <>
-            <Particle />
-
             <img src="/img/bottom.svg" alt="" />
 
             <section className="container mx-auto text-center py-6 mb-12">
