@@ -17,15 +17,16 @@ function HeadTitle(props) {
                 <meta name="description" content={customHead.description ?? ''} />
                 <meta name="keywords" content={customHead.keywords ?? ''} />
                 <meta name="author" content={Website.name} />
+                <meta property="og:site_name" content={Website.name} />
                 <meta property="og:url" content={location.route} />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content={`${customHead.title} - ${Website.name}`} />
                 <meta property="og:description" content={customHead.description ?? ''} />
                 <meta property="og:image" content={customHead.image ?? ''} />
-                <meta name="twitter:title" content={`${customHead.title} - ${Website.name}`} />
-                <meta name="twitter:description" content={customHead.description ?? ''} />
-                <meta name="twitter:image" content={customHead.image ?? ''} />
                 <meta name="twitter:card" content="website" />
+                <meta name="twitter:site" content={`@${Website.social.twitter.name}`} />
+                <meta name="robots" content="index,follow" />
+                <meta name="googlebot" content="index,follow" />
             </Head>
         </>
     )
