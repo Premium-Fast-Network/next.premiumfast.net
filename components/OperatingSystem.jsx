@@ -83,11 +83,11 @@ export default function OperatingSystem() {
                     {
                         listOS.map((os, index) => (
                             <div key={`os-${index}`} id={`os-${index}`} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
-                                <div className="theme-font-color text-center text-sm">
+                                <div className="text-center text-sm">
                                     <div className="text-5xl">
                                         <FontAwesomeIcon icon={os.icon} />
                                     </div>
-                                    <p className="text-2xl underline">{os.name}</p>
+                                    <p className="text-2xl underline theme-font-color">{os.name}</p>
                                     <ul>
                                         {
                                             os.lists.map((list, index) => (

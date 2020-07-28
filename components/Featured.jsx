@@ -24,11 +24,11 @@ export default function Featured(props) {
                     {
                         lists.map((list, index) => (
                             <div key={`featurelist-${index}`} id={`featurelist-${index}`} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4">
-                                <div className="theme-font-color text-center text-sm">
-                                    <div className="text-5xl">
+                                <div className="text-center text-sm">
+                                    <div className="text-5xl theme-font-color">
                                         <FontAwesomeIcon icon={list.icon} />
                                     </div>
-                                    <p className="text-xl">{list.name}</p>
+                                    <p className="text-xl theme-font-color">{list.name}</p>
                                     <p>{list.description}</p>
                                 </div>
                             </div>
