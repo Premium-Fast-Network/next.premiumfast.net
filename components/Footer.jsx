@@ -34,19 +34,19 @@ export default function Footer() {
                             <div className="h-1 w-1/3 gradient my-0 py-0 rounded-t md:mb-4"></div>
                             <ul className="list-reset">
                                 <li className="mb-2">
-                                    <a href={Website.social.facebook.url} className="no-underline hover:underline text-gray-800 hover:text-blue-500"><FontAwesomeIcon icon={faFacebook} className="text-blue-700" /> {Website.social.facebook.name}</a>
+                                    <FontAwesomeIcon icon={faFacebook} className="text-blue-700" /> <a href={Website.social.facebook.url} className="no-underline hover:underline text-gray-800 hover:text-blue-500">{Website.social.facebook.name}</a>
                                 </li>
                                 <li className="mb-2">
-                                    <a href={Website.social.twitter.url} className="no-underline hover:underline text-gray-800 hover:text-blue-500"><FontAwesomeIcon icon={faTwitter} className="text-blue-500" /> @{Website.social.twitter.name}</a>
+                                    <FontAwesomeIcon icon={faTwitter} className="text-blue-500" /> <a href={Website.social.twitter.url} className="no-underline hover:underline text-gray-800 hover:text-blue-500">@{Website.social.twitter.name}</a>
                                 </li>
                                 <li className="mb-2">
-                                    <a href={Website.social.youtube.url} className="no-underline hover:underline text-gray-800 hover:text-blue-500"><FontAwesomeIcon icon={faYoutube} className="text-red-500" /> {Website.social.youtube.name}</a>
+                                    <FontAwesomeIcon icon={faYoutube} className="text-red-500" /> <a href={Website.social.youtube.url} className="no-underline hover:underline text-gray-800 hover:text-blue-500">{Website.social.youtube.name}</a>
                                 </li>
                                 <li className="mb-2">
-                                    <a href="https://docs.premiumfast.net/" className="no-underline hover:underline text-gray-800 hover:text-blue-500"><FontAwesomeIcon icon={faBook} className="text-green-500" /> Documentation</a>
+                                    <FontAwesomeIcon icon={faBook} className="text-green-500" /> <a href="https://docs.premiumfast.net/" className="no-underline hover:underline text-gray-800 hover:text-blue-500">Documentation</a>
                                 </li>
                                 <li className="mb-2">
-                                    <a href="https://status.premiumfast.net/" className="no-underline hover:underline text-gray-800 hover:text-blue-500"><FontAwesomeIcon icon={faServer} className="text-yellow-500" /> Status Server</a>
+                                    <FontAwesomeIcon icon={faServer} className="text-yellow-500" /> <a href="https://status.premiumfast.net/" className="no-underline hover:underline text-gray-800 hover:text-blue-500">Status Server</a>
                                 </li>
                             </ul>
                         </div>
@@ -102,7 +102,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className="w-full pt-16 pb-6 text-sm text-center theme-font-color md:text-left fade-in">
+                    <div className="w-full pt-4 pb-4 text-sm text-center theme-font-color md:text-left fade-in">
                         &copy; Premium Fast Network 2013-{dateYear}, All Rights Reserved.
                         Thanks to <a className="text-orange-500 underline" href="https://undraw.co/">undraw.co</a> For Image
                         Illustrator.
