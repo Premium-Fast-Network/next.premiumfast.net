@@ -68,7 +68,11 @@ export default function Footer() {
                             <p className="uppercase font-bold theme-font-color md:mb-6">Company</p>
                             <ul className="list-reset mb-6">
                                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="https://docs.premiumfast.net/faq/pre-sales-question" className="no-underline hover:underline text-gray-800 hover:text-blue-500">About Us</a>
+                                    <Link href="/about-us">
+                                        <a className="no-underline hover:underline text-gray-800 hover:text-blue-500">
+                                            About Us
+                                        </a>
+                                    </Link>
                                 </li>
                                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                                     <a href="https://docs.premiumfast.net/faq/after-sales-question" className="no-underline hover:underline text-gray-800 hover:text-blue-500">Why Us?</a>
