@@ -40,11 +40,11 @@ export default function Home() {
           imageSvg={head.imageSvg}
         >
           <div>
-            <button onClick={onClickRegister} className="hover:bg-green-800 hover:text-white bg-white text-gray-800 font-bold rounded py-2 px-4 rounded-full mx-2 my-2">
+            <button onClick={onClickRegister} className="hover:bg-green-800 hover:text-white bg-white text-gray-800 font-bold py-2 px-4 rounded-full mx-2 my-2">
               <FontAwesomeIcon icon={faUserEdit} /> Register
             </button>
 
-            <button onClick={onClickLogin} className="hover:bg-green-800 hover:text-white bg-white text-gray-800 font-bold rounded py-2 px-4 rounded-full mx-2 my-2">
+            <button onClick={onClickLogin} className="hover:bg-green-800 hover:text-white bg-white text-gray-800 font-bold py-2 px-4 rounded-full mx-2 my-2">
               <FontAwesomeIcon icon={faSignInAlt} /> Login
             </button>
           </div>
