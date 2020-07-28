@@ -69,9 +69,6 @@ export default function Footer() {
                                 <li className="mb-2">
                                     <a href="https://docs.premiumfast.net/ketentuan-layanan-terms-of-services#4-pengembalian-dana" className="no-underline hover:underline text-gray-800 hover:text-blue-500">Pengembalian Dana</a>
                                 </li>
-                                <li className="mb-2">
-                                    <a href="https://docs.premiumfast.net/reseller/introduction" className="no-underline hover:underline text-gray-800 hover:text-blue-500">Reseller Discount</a>
-                                </li>
                             </ul>
                         </div>
                         <div className="w-full sm:w-1/1 md:w-1/2 lg:w-1/4 xl:w-1/4 my-4">
@@ -86,16 +83,20 @@ export default function Footer() {
                                     </Link>
                                 </li>
                                 <li className="mb-2">
-                                    <a href="https://docs.premiumfast.net/faq/after-sales-question" className="no-underline hover:underline text-gray-800 hover:text-blue-500">Why Us?</a>
+                                    <Link href="/why-us">
+                                        <a className="no-underline hover:underline text-gray-800 hover:text-blue-500">
+                                            Why Us?
+                                        </a>
+                                    </Link>
                                 </li>
                                 <li className="mb-2">
-                                    <a href="https://manage.premiumfast.net/announcements" className="no-underline hover:underline text-gray-800 hover:text-blue-500">Pengumuman</a>
+                                    <a href={`${Website.clientarea}/announcements`} className="no-underline hover:underline text-gray-800 hover:text-blue-500">Pengumuman</a>
                                 </li>
                                 <li className="mb-2">
-                                    <a href="https://manage.premiumfast.net/testimonials.php" className="no-underline hover:underline text-gray-800 hover:text-blue-500">Testimonials</a>
+                                    <a href={`${Website.clientarea}/testimonials.php`} className="no-underline hover:underline text-gray-800 hover:text-blue-500">Testimonials</a>
                                 </li>
                                 <li className="mb-2">
-                                    <a href="https://manage.premiumfast.net/contact.php" className="no-underline hover:underline text-gray-800 hover:text-blue-500">Contact Us</a>
+                                    <a href="https://docs.premiumfast.net/reseller/introduction" className="no-underline hover:underline text-gray-800 hover:text-blue-500">Reseller Discount</a>
                                 </li>
                             </ul>
                         </div>
