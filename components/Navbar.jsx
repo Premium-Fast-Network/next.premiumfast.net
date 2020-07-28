@@ -118,7 +118,7 @@ function Navbar({ router }) {
                     </button>
                 </div>
 
-                <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent p-4 lg:p-0 z-20"
+                <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent p-4 lg:p-0 z-20"
                     id="nav-content">
                     <ul className="list-reset lg:flex justify-end flex-1 items-center">
                         {
@@ -132,13 +132,23 @@ function Navbar({ router }) {
                                             </Link>
                                             <ul className="absolute hidden text-gray-700 pt-1 group-hover:block">
                                                 {
-                                                    nav.child.map((child, index) => (
-                                                        <li key={`navchild-${index}`} id={`navchild-${index}`}>
-                                                            <Link href={child.href}>
-                                                                <a className={`rounded-t py-2 px-4 block whitespace-no-wrap ${ router.pathname == child.href ? 'bg-gray-500' : 'bg-gray-200 hover:bg-gray-500' }`}>{child.name}</a>
-                                                            </Link>
-                                                        </li>
-                                                    ))
+                                                    nav.child.map((child, index) => {
+                                                        if(child.eksternal) {
+                                                            return (
+                                                                <li key={`navchild-${index}`} id={`navchild-${index}`}>
+                                                                    <a href={child.href} className={`rounded-t py-2 px-4 block whitespace-no-wrap bg-gray-200 hover:bg-gray-500`}>{child.name}</a>
+                                                                </li>
+                                                            )
+                                                        } else {
+                                                            return (
+                                                                <li key={`navchild-${index}`} id={`navchild-${index}`}>
+                                                                    <Link href={child.href}>
+                                                                        <a className={`rounded-t py-2 px-4 block whitespace-no-wrap ${ router.pathname == child.href ? 'bg-gray-500' : 'bg-gray-200 hover:bg-gray-500' }`}>{child.name}</a>
+                                                                    </Link>
+                                                                </li>
+                                                            )
+                                                        }
+                                                    })
                                                 }
                                             </ul>
                                         </li>
