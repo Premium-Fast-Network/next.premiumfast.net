@@ -1,12 +1,16 @@
 import Head from 'next/head'
 import { Website } from '../config/Website'
-import { withRouter } from 'next/router'
+import { useState, useEffect } from 'react'
 
-function HeadTitle(props) {
+export default function HeadTitle(props) {
     const customHead = props.customHead
 
-    // get now location
-    const location = props.router
+    const [ hostweb, setHostweb ] = useState(0)
+
+    useEffect(() => {
+        // location
+        setHostweb(window.location)
+    })
 
     return (
         <>
@@ -18,11 +22,11 @@ function HeadTitle(props) {
                 <meta name="keywords" content={customHead.keywords ?? ''} />
                 <meta name="author" content={Website.name} />
                 <meta property="og:site_name" content={Website.name} />
-                <meta property="og:url" content={location.route} />
+                <meta property="og:url" content={hostweb.href} />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content={`${customHead.title} - ${Website.name}`} />
                 <meta property="og:description" content={customHead.description ?? ''} />
-                <meta property="og:image" content={customHead.image ?? ''} />
+                <meta property="og:image" content={`${hostweb.origin}${customHead.image ?? ''}`} />
                 <meta name="twitter:card" content="website" />
                 <meta name="twitter:site" content={`@${Website.social.twitter.name}`} />
                 <meta name="robots" content="index,follow" />
@@ -31,5 +35,3 @@ function HeadTitle(props) {
         </>
     )
 }
-
-export default withRouter(HeadTitle)
