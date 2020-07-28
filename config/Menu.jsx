@@ -1,8 +1,8 @@
 export const menuTop = [
     { name: 'Home', href: '/'},
     { name: 'Jasa', href: '#', child: [
+        { name: 'Jual Beli Saldo Paypal', href: 'https://kedaiexchange.com/', eksternal: true },
         { name: 'Whatsapp Gateway', href: '/product/whatsapp-gateway' },
-        { name: 'Reseller Whatsapp Gateway', href: '/product/reseller-whatsapp-gateway' },
     ]},
     { name: 'Server', href: '#', child: [
         { name: 'RDP User', href: '/product/rdp-user' },
