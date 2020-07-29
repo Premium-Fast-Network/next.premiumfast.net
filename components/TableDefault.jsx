@@ -21,18 +21,18 @@ export default function TableDefault(props) {
                             return (
                                 <div key={`product-${index}`} id={`product-${index}`} className={`flex flex-col w-5/6 mx-auto lg:mx-0 ${product.featured == true ? 'lg:w-1/4 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10' : 'lg:w-1/4 rounded-none lg:rounded-l-lg bg-white mt-4'}`}>
                                     <div className={`flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow ${product.featured == true ? '' : 'text-gray-700'}`}>
-                                        <div className={`${product.featured == true ? 'w-full p-8 text-3xl' : 'p-8 text-3xl border-b-4'} font-bold text-center`}>{product.name}</div>
-                                        <div className={`${product.featured == true ? 'h-1 w-full gradient my-0 py-0 rounded-t' : ''}`}></div>
+                                        <div className={`${product.featured == true ? 'w-full p-4 text-3xl' : 'p-4 text-3xl border-b-4'} font-bold text-center`}>{product.name}</div>
+                                        <div className={`${product.featured == true ? 'h-1 w-full gradient my-0 py-0 rounded-t' : ''} mb-2`}></div>
                                         <ul className={`w-full text-center ${product.featured == true ? 'text-base font-bold' : 'text-sm'}`}>
                                             {
                                                 product.description.map((desc, index) => (
-                                                    <li key={`productdesc-${index}`} id={`productdesc-${index}`} className="border-b py-4">{desc}</li>
+                                                    <li key={`productdesc-${index}`} id={`productdesc-${index}`} className="border-b">{desc}</li>
                                                 ))
                                             }
                                         </ul>
                                     </div>
-                                    <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                                        <div className={`w-full pt-6 ${product.featured == true ? 'text-4xl font-bold text-center' : 'text-2xl text-gray-600 font-bold text-center'}`}>
+                                    <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-4">
+                                        <div className={`w-full pt-2 ${product.featured == true ? 'text-4xl font-bold text-center' : 'text-2xl text-gray-600 font-bold text-center'}`}>
                                             {product.price}<span className="text-base">{product.duration}</span>
                                         </div>
                                         <div className="flex items-center justify-center">
