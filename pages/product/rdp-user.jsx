@@ -14,9 +14,9 @@ export default function WhatsappGateway() {
     const head = {
         title: 'RDP User',
         description: 'RDP User sangat cocok bagi anda yang kebutuhan download atau upload ke berbagai host tanpa mengurangi kuota internet anda, Semua koneksi internet dan quota sepenuhnya menggunakan koneksi dari server rdp.',
-        keywords: 'whatsapp gateway, whatsapp, kirim pesan whatsapp, whatsapp rest api, whatsapp api',
-        image: '/img/png/undraw_connected_world.png',
-        imageSvg: '/img/undraw_connected_world.svg'
+        keywords: 'rdp, rdp user, rdp murah, rdp nvme, rdp storage, rdp eropa, rdp ram besar',
+        image: '/img/png/undraw_server.png',
+        imageSvg: '/img/undraw_server.svg'
     }
 
     // Products Data
