@@ -48,7 +48,8 @@ export default function OperatingSystem() {
             name: 'Fedora',
             icon: ['fab', 'fedora'],
             lists: [
-                'Fedora 27 64-bit',
+                'Fedora 31 64-bit',
+                'Fedora 32 64-bit',
             ]
         },
         {
@@ -56,6 +57,7 @@ export default function OperatingSystem() {
             icon: ['fab', 'suse'],
             lists: [
                 'openSUSE 13 64-bit',
+                'openSUSE 15 64-bit',
             ]
         },
         {
@@ -71,7 +73,7 @@ export default function OperatingSystem() {
     return (
         <section className="bg-white border-b py-8">
             <div className="container mx-auto px-2 pt-4 pb-12 text-gray-800">
-                <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+                <h1 className="w-full my-2 text-2xl lg:text-4xl font-bold leading-tight text-center text-gray-800">
                     OS (Operating System) Available
                 </h1>
                 <div className="w-full mb-4">
