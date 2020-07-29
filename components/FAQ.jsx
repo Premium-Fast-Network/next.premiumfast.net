@@ -26,7 +26,7 @@ export default function FAQ(props) {
                     {
                         lists.map((list, index) => (
                             <div key={`faq-${index}`} id={`faq-${index}`} className="w-full sm:w-1/1 md:w-1/2 lg:w-1/2 xl:w-1/2 rounded group">
-                                <h3 className="gradient text-white text-sm lg:text-base font-bold rounded my-2 mx-2 py-2 px-2">   
+                                <h3 className="gradient text-white text-sm lg:text-base font-bold rounded my-1 mx-1 py-2 px-2">   
                                     {list.title}
                                 </h3>
                                 <div className="bg-gray-700 text-white text-justify hidden rounded group-hover:block mx-2 my-2">
