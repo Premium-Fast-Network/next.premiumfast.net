@@ -28,14 +28,19 @@ export default function Home() {
         </HeadContent>
 
         <section className="bg-white border-b py-8">
-          <div className="container m-8">
-            <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-                Pembayaran Automatis
-            </h1>
-            <div className="w-full mb-4">
-                <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+          <div className="container mx-auto m-8">
+            {/* Center Box with Description */}
+            <div className="flex justify-center items-center text-center">
+              <div className="w-2/3">
+                <h1 className="my-2 text-2xl lg:text-4xl font-bold text-gray-800">
+                    Pembayaran Automatis
+                </h1>
+                <div className="mb-4">
+                    <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+                </div>
+                <p className="text-gray-700 text-sm mb-2">Anda akan dikenakan biaya (fee) ketika menggunakan payment gateway automatis, biaya yang anda bayarkan tergantung metode yang anda gunakan. Detail fee lengkap akan muncul pada payment gateway yang anda pilih.</p>
+              </div>
             </div>
-            <p className="text-gray-700 text-center mb-2">Anda akan dikenakan biaya (fee) ketika menggunakan payment gateway automatis, biaya yang anda bayarkan tergantung metode yang anda gunakan. Detail fee lengkap akan muncul pada payment gateway yang anda pilih.</p>
 
             <div className="relative m-8 text-black">
               <div className="border-r-2 border-green-500 absolute h-full top-0" style={{left: '15px'}}></div>
@@ -133,13 +138,18 @@ export default function Home() {
               </ul>
             </div>
 
-            <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-                Pembayaran Manual
-            </h1>
-            <div className="w-full mb-4">
-                <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            {/* Center Box with Description */}
+            <div className="flex justify-center items-center text-center">
+              <div className="w-2/3">
+                <h1 className="my-2 text-2xl lg:text-4xl font-bold text-gray-800">
+                  Pembayaran Manual
+                </h1>
+                <div className="mb-4">
+                    <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+                </div>
+                <p className="text-gray-700 text-sm mb-2">Tidak ada biaya (fee) jika menggunakan pembayaran manual.</p>
+              </div>
             </div>
-            <p className="text-gray-700 text-center mb-2">Tidak ada biaya (fee) jika menggunakan pembayaran manual.</p>
 
             <div className="relative m-8 text-black">
               <div className="border-r-2 border-green-500 absolute h-full top-0" style={{left: '15px'}}></div>
