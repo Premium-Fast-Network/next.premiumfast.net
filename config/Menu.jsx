@@ -6,7 +6,7 @@ export const menuTop = [
     ]},
     { name: 'Server', href: '#', child: [
         { name: 'RDP User', href: '/product/rdp-user' },
-        { name: 'RDP Emulator', href: '/product/rdp-user' },
+        { name: 'RDP Emulator', href: '/product/rdp-emulator' },
         { name: 'RDP Dedicated', href: '/product/rdp-dedicated' },
         { name: 'KVM VPS Canada', href: '/product/kvm-vps-canada' },
         { name: 'KVM VPS France', href: '/product/kvm-vps-france' },
