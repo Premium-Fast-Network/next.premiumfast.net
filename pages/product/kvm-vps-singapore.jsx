@@ -40,7 +40,7 @@ export default function KvmVPSSingapore() {
             name: 'SG-SSD-2',
             price: 'Rp. 195k',
             duration: '/bulan',
-            featured: false,
+            featured: true,
             link: `${Website.clientarea}/cart.php?a=add&pid=145`,
             description: [
                 '1 vCPU',
@@ -70,7 +70,7 @@ export default function KvmVPSSingapore() {
             name: 'SG-SSD-4',
             price: 'Rp. 385k',
             duration: '/bulan',
-            featured: false,
+            featured: true,
             link: `${Website.clientarea}/cart.php?a=add&pid=147`,
             description: [
                 '3 vCPU',

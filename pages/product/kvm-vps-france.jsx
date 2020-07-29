@@ -70,7 +70,7 @@ export default function KvmVPSFrance() {
             name: 'FR-SSD-16',
             price: 'Rp. 800k',
             duration: '/bulan',
-            featured: false,
+            featured: true,
             link: `${Website.clientarea}/cart.php?a=add&pid=200`,
             description: [
                 '3 vCPU',
