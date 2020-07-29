@@ -1,9 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap');
-
 body {
     font-family: 'Roboto Mono', monospace;
 }
@@ -18,4 +16,68 @@ body {
 
 .theme-font-color {
     color: #08b427;
+}
+
+/** Icon Logo */
+
+#icon-server .ind1 {
+    -webkit-animation-name: ind1;
+    animation-name: ind1;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+
+#icon-server .ind2 {
+    -webkit-animation-name: ind2;
+    animation-name: ind2;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+
+@-webkit-keyframes ind1 {
+    from, 50%, to {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+@keyframes ind1 {
+    from, 50%, to {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes ind2 {
+    25%, 75% {
+        opacity: 1;
+    }
+    from, 50%, to {
+        opacity: 0;
+    }
+}
+
+@keyframes ind2 {
+    25%, 75% {
+        opacity: 1;
+    }
+    from, 50%, to {
+        opacity: 0;
+    }
 }

@@ -100,9 +100,9 @@ function Navbar({ router }) {
                 <div className="pl-4 flex items-center">
                     <Link href="/">
                         <a className="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
-                            <svg className="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" width="45" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="#2a2a31" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
+                            <svg id="icon-server" className="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" width="45" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="#2a2a31" strokeWidth="2" strokeLinecap="round"
+                                strokeLinejoin="round">
                                 <rect x="2" y="2" width="25" height="8" rx="2" ry="2"></rect>
                                 <rect x="2" y="14" width="25" height="8" rx="2" ry="2"></rect>
                                 <line className="ind1" stroke="#ea3970" x1="6" y1="6" x2="6" y2="6"></line>
@@ -118,34 +118,44 @@ function Navbar({ router }) {
                     </button>
                 </div>
 
-                <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent p-4 lg:p-0 z-20"
+                <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent p-4 lg:p-0 z-20"
                     id="nav-content">
                     <ul className="list-reset lg:flex justify-end flex-1 items-center">
                         {
-                            menuTop.map((nav) => {
+                            menuTop.map((nav, index) => {
 
                                 if(nav.child) {
                                     return (
-                                        <li className="group inline-block relative mr-3">
+                                        <li key={`navparent-${index}`} id={`navparent-${index}`} className="group inline-block relative mr-2">
                                             <Link href={nav.href}>
                                                 <a className={`toggleColour inline-block py-2 px-4 no-underline ${ router.pathname == nav.href ? 'font-bold' : 'hover:text-gray-800 hover:text-underline' }`}>{nav.name}</a>
                                             </Link>
                                             <ul className="absolute hidden text-gray-700 pt-1 group-hover:block">
                                                 {
-                                                    nav.child.map(child => (
-                                                        <li>
-                                                            <Link href={child.href}>
-                                                                <a class={`rounded-t py-2 px-4 block whitespace-no-wrap ${ router.pathname == child.href ? 'bg-gray-500' : 'bg-gray-200 hover:bg-gray-500' }`}>{child.name}</a>
-                                                            </Link>
-                                                        </li>
-                                                    ))
+                                                    nav.child.map((child, index) => {
+                                                        if(child.eksternal) {
+                                                            return (
+                                                                <li key={`navchild-${index}`} id={`navchild-${index}`}>
+                                                                    <a href={child.href} className={`rounded-t py-2 px-4 block whitespace-no-wrap bg-gray-200 hover:bg-gray-500`}>{child.name}</a>
+                                                                </li>
+                                                            )
+                                                        } else {
+                                                            return (
+                                                                <li key={`navchild-${index}`} id={`navchild-${index}`}>
+                                                                    <Link href={child.href}>
+                                                                        <a className={`rounded-t py-2 px-4 block whitespace-no-wrap ${ router.pathname == child.href ? 'bg-gray-500' : 'bg-gray-200 hover:bg-gray-500' }`}>{child.name}</a>
+                                                                    </Link>
+                                                                </li>
+                                                            )
+                                                        }
+                                                    })
                                                 }
                                             </ul>
                                         </li>
                                     )
                                 } else {
                                     return (
-                                        <li className="inline-block relative mr-3">
+                                        <li key={`navparent-${index}`} id={`navparent-${index}`} className="inline-block relative mr-2">
                                             <Link href={nav.href}>
                                                 <a className={`toggleColour inline-block py-2 px-4 no-underline ${ router.pathname == nav.href ? 'font-bold' : 'hover:text-gray-800 hover:text-underline' }`}>{nav.name}</a>
                                             </Link>
