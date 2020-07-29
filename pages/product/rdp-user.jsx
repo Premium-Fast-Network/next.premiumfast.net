@@ -106,36 +106,36 @@ export default function WhatsappGateway() {
 
     const faqs = [
         {
-            title: 'Apa itu RDP?',
-            description: "RDP (Remote Desktop Protocol) Adalah sebuah methode untuk 'Remote Komputer' dari jarak jauh.\n\nApa yang dimaksud 'Remote Komputer'?\nRemote Komputer yaitu kita bisa menjalankan program dan aplikasi dari komputer lain dari lokasi kita berada."
+            "title": "Apa itu RDP?",
+            "description": "RDP (Remote Desktop Protocol) Adalah sebuah methode untuk \"Remote Komputer\" dari jarak jauh.\nApa yang dimaksud \"Remote Komputer\"?\nRemote Komputer yaitu kita bisa menjalankan program dan aplikasi dari komputer lain dari lokasi kita berada."
         },
         {
-            title: 'Apa Itu Shared Pada CPU Dan RAM?',
-            description: 'Shared CPU artinya, anda hanya bisa menggunakan maksimal 20% dari CPU selama 1 jam, jika lebih dari itu, akun akan disuspend, jika butuh cpu full, silahkan ke produk kvm vps.\n\nShared RAM artinya, anda hanya bisa menggunakan maksimal 2 GB dari RAM, jika lebih dari itu, akun akan disuspend, jika butuh RAM lebih besar, silahkan ke produk kvm vps.'
+            "title": "Apa itu Shared pada CPU dan RAM?",
+            "description": "Shared CPU artinya, anda hanya bisa menggunakan maksimal 20% dari CPU, jika lebih dari itu, akun akan disuspend, jika butuh cpu full, silahkan ke produk kvm vps.\n\nShared RAM artinya, anda hanya bisa menggunakan maksimal 2 GB dari RAM, jika lebih dari itu, akun akan disuspend, jika butuh RAM lebih besar, silahkan ke produk kvm vps."
         },
         {
-            title: 'Apa Itu No Mining/No Admin/No Encoding/No Bot?',
-            description: 'No Mining Maksudnya anda tidak diperbolehkan menggunakan produk ini untuk mining (software,web,cmd,dll), segala bentuk mining dilarang pada produk ini.!! Produk anda akan disuspend permanent jika melakukan hal tersebut.\n\nNo Admin maksudnya anda tidak mendapatkan hak akses admin, yang berarti anda tidak dapat menginstall program pada server dan anda tidak dapat menjalankan program-program yang membutuhkan hak akses admin.\n\nNo Encoding maksudnya anda tidak dapat menjalankan aplikasi seperti edit video/buat video/edit audio/buat audio/match video dll pada RDP ini. No Bot maksudnya anda tidak bisa menjalankan program-program bot pada rdp ini.\n\nYes Bot maksudnya anda bisa menjalankan program-program bot pada rdp ini.'
+            "title": "Apa itu No Mining\/No Admin\/No Encoding\/No Bot?",
+            "description": "No Mining Maksudnya anda tidak diperbolehkan menggunakan produk ini untuk mining (software,web,cmd,dll), segala bentuk mining dilarang pada produk ini.!! Produk anda akan disuspend permanent jika melakukan hal tersebut.\n\nNo Admin maksudnya anda tidak mendapatkan hak akses admin, yang berarti anda tidak dapat menginstall program pada server dan anda tidak dapat menjalankan program-program yang membutuhkan hak akses admin\n\nNo Encoding maksudnya anda tidak dapat menjalankan aplikasi seperti edit video\/buat video\/edit audio\/buat audio\/match video dll pada RDP ini.\n\nNo Bot maksudnya anda tidak bisa menjalankan program-program bot pada rdp ini\nYes Bot maksudnya anda bisa menjalankan program-program bot pada rdp ini."
         },
         {
-            title: 'Bisakah Saya Request Install Aplikasi Pada RDP Saya?',
-            description: 'Tidak, jika anda butuh custom aplikasi, silahkan ke produk KVM VPS.!'
+            "title": "Bisakah Saya Request Install Aplikasi pada RDP saya?",
+            "description": "Tentu saja bisa, Silahkan kirim tiket ke support kami beserta link aplikasi yang ingin di install.\nPastikan software yang anda request tidak masuk ke dalam List Banned Software RDP USER => https:\/\/manage.premiumfast.net\/knowledgebase\/56\/Daftar-Banned-Softaware-RDP-USER.html."
         },
         {
-            title: 'Bisakah Saya Menggunakan Untuk Encoding Video/Audio?',
-            description: 'Maaf, anda tidak di perbolehkan menggunakan RDP ini untuk encoding video/audio, kami sarankan anda untuk menggunakan RDP ADMINISTRATOR (KVM VPS) untuk encoding video/audio.'
+            "title": "Bisakah saya menggunakan untuk encoding video\/audio?",
+            "description": "Maaf, anda tidak di perbolehkan menggunakan RDP ini untuk encoding video\/audio, kami sarankan anda untuk menggunakan RDP ADMINISTRATOR (KVM VPS) untuk encoding video\/audio."
         },
         {
-            title: 'Bisakah Saya Menggunakan 100% Source RAM/CPU?',
-            description: 'Maaf, Anda tidak di izinkan menggunakan 100% source RAM/CPU, Silahkan baca Ketentuan Layanan kami mengenai pembatasan CPU ini.\n\nKami rekomendasi anda menggunakan RDP ADMINISTRATOR (KVM VPS) untuk mendapatkan full source RAM/CPU 100%.'
+            "title": "Bisakah Saya menggunakan 100% Source RAM\/CPU?",
+            "description": "Maaf, Anda tidak di izinkan menggunakan 100% source RAM\/CPU, Silahkan baca Ketentuan Layanan kami mengenai pembatasan CPU ini.\nKami rekomendasi anda menggunakan RDP ADMINISTRATOR (KVM VPS) untuk mendapatkan full source RAM\/CPU 100%."
         },
         {
-            title: 'Bagaimana Cara Mengakses RDP?',
-            description: ' Anda bisa menggunakan :\n1. Remote Desktop Procotol pada Windows.\n2. Remmina Remote Desktop Pada Linux.\n3. Microsoft Remote Desktop pada Mac OS & Android.'
+            "title": "Bagaimana Cara Mengakses RDP?",
+            "description": "Anda bisa menggunakan :\n1. Remote Desktop Procotol pada Windows.\n2. Remmina Remote Desktop Pada Linux.\n3. Microsoft Remote Desktop pada Mac OS & Android."
         },
         {
-            title: 'Apa Itu NVMe?',
-            description: 'NVMe merupakan storage generasi terbaru. Pada umumnya kita biasa menggunakan hard drive yaitu HDD atau SSD yang terhubung menggunakan kabel IDE atau SATA.\n\nDengan NVMe, baca tulis (RW) pada storage lebih cepat di bandingkan HDD atau SSD, hingga 6-10x lebih cepat.\n\nKecepatan NVMe :\n\nRead: 2 Gbps (Test: 2.402 MB/s)\n\nWrite: 1 Gbps (Test: 1.269 MB/s)\n\nDengan kecepatan ini, anda tidak khawatir jika kehabisan IOPS (Input Output Per-Second) dan Kecepatan RW (Read Write) menurun.'
+            "title": "Apa itu NVMe?",
+            "description": "NVMe merupakan storage generasi terbaru. Pada umumnya kita biasa menggunakan hard drive yaitu HDD atau SSD yang terhubung menggunakan kabel IDE atau SATA.\n\nDengan NVMe, baca tulis (RW) pada storage lebih cepat di bandingkan HDD atau SSD, hingga 6-10x lebih cepat.\n\nKecepatan NVMe :\nRead: 2 Gbps (Test: 2.402 MB\/s)\nWrite: 1 Gbps (Test: 1.269 MB\/s)\n\nDengan kecepatan ini, anda tidak khawatir jika kehabisan IOPS (Input Output Per-Second) dan Kecepatan RW (Read Write) menurun."
         }
     ]
 
