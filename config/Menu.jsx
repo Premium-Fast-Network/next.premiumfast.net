@@ -11,7 +11,7 @@ export const menuTop = [
         { name: 'KVM VPS Canada', href: '/product/kvm-vps-canada' },
         { name: 'KVM VPS France', href: '/product/kvm-vps-france' },
         { name: 'KVM VPS Singapore', href: '/product/kvm-vps-singapore' },
-        { name: 'VPN', href: '/vpn' },
+        { name: 'VPN', href: '/product/vpn' },
     ]},
     { name: 'Seedbox', href: '#', child: [
         { name: 'Leechbox', href: '/product/leechbox' },
