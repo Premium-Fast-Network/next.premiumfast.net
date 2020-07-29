@@ -1,6 +1,8 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { useEffect } from 'react';
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-76200999-2');
 
 export default function Layouts(props) {
     function tawkTo(propertyId){
@@ -35,6 +37,7 @@ export default function Layouts(props) {
 
     useEffect(() => {
         tawkTo('565f1adc143d6d8f72be968d')
+        ReactGA.pageview(window.location.pathname + window.location.search);
     }, [])
 
     return (
